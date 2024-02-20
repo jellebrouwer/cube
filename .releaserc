@@ -1,0 +1,6 @@
+{
+  "branches": ["main"],
+  "repositoryUrl": "https://<link-to-your-remote-repo>.git",
+  "ci": false,
+  "dryRun": true,
+}
