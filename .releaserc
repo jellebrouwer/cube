@@ -1,6 +1,19 @@
 {
   "branches": ["main"],
-  "repositoryUrl": "https://<link-to-your-remote-repo>.git",
+  "repositoryUrl": "git@github.com:jellebrouwer/cube.git",
   "ci": false,
-  "dryRun": true,
+  "dryRun": false,
+  "plugins":
+    [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "echo prepare release: ${nextRelease.version}",
+          "publishCmd": "echo deploy it",
+        },
+      ],
+    ],
 }

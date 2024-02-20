@@ -1,5 +1,10 @@
 {
+  "name": "cube",
+  "scripts": {
+    "release": "npx semantic-release"
+  },
   "devDependencies": {
+    "@semantic-release/exec": "^6.0.3",
     "semantic-release": "^23.0.2"
   }
 }
